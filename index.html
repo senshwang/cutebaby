@@ -1,91 +1,58 @@
 <!DOCTYPE html>
-<html lang="kor">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pamphlet</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-     <style>
-
-        body #temp{
+    <title>초대장</title>
+    <style>
+        body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
         }
-
-        .swiper-container {
-            height: 740px;
-            align-self: center;
-
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
         }
-
-        .swiper-slide {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: beige;
-            border-radius: 30px;
+        img {
+            max-width: 100%;
+            border-radius: 10px;
         }
-
-
-        .swiper-slide img {
-            max-width: 90%; /* This will ensure the image fits within the slide. */
-            height: auto; /* This will maintain the image's aspect ratio. */
-            display: block; /* This will remove any additional space below the image. */
-            margin: 8px auto; /* This centers the image horizontally and adds some space above and below. */
+        h1 {
+            color: #333;
         }
-
-
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
-<body id="temp">
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            1
-        </div>
+<body>
 
-        <div class="swiper-slide">
-            2
-        </div>
-        <div class="swiper-slide">
-            3
-        </div>
-
-        <div class="swiper-slide">
-            4
-        </div>
-
-
+    <div class="container">
+        <h1>초대합니다!</h1>
+        <img src="https://via.placeholder.com/400x250" alt="초대장 이미지">
+        <p>특별한 날을 함께해 주세요.</p>
+        <p><strong>날짜:</strong> 2025년 4월 10일</p>
+        <p><strong>시간:</strong> 오후 6시</p>
+        <p><strong>장소:</strong> 서울 강남구 스타호텔</p>
+        <a href="#" class="btn">참석하기</a>
     </div>
-    <div class="swiper-pagination"></div>
 
-</div>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        grabCursor: true,
-        effect: "cards",
-        perSlideOffset: 5,
-        perSlideRotate: 8,
-        creativeEffect: {
-            prev: {
-                shadow: true,
-                translate: ["-120%", 0, -500],
-            },
-            next: {
-                shadow: true,
-                translate: ["120%", 0, -500],
-            },
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        slideToClickedSlide: true
-    });
-
-</script>
 </body>
 </html>
