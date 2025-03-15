@@ -1,10 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-    </head>
-    <body>
-        hayeoun
-    </body>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamphlet</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            text-align: center;
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .swiper-container {
+            height: 740px;
+            align-self: center;
+
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: beige;
+            border-radius: 30px;
+        }
+
+
+        p, li {
+            font-weight: 300; /* Light */
+            font-size: 16px;
+        }
+
+        a {
+            color: #465fcc; /* Change link color */
+            text-decoration: none; /* Add underline for clarity */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Remove underline on hover */
+        }
+
+
+        /* Remove bullet points from the <li> elements */
+        .swiper-slide ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .swiper-slide img {
+            max-width: 90%; /* This will ensure the image fits within the slide. */
+            height: auto; /* This will maintain the image's aspect ratio. */
+            display: block; /* This will remove any additional space below the image. */
+            margin: 8px auto; /* This centers the image horizontally and adds some space above and below. */
+        }
+
+        .swiper-slide p {
+            max-height: 90%; /* This will ensure the image fits within the slide. */
+            height: auto; /* This will maintain the image's aspect ratio. */
+        }
+
+
+        #photo {
+            margin-top: 50px;
+            align-self: auto;
+        }
+
+        .swiper-slide ul {
+            margin-bottom: 20px;
+        }
+
+
+
+        /* Target the last two <li> elements */
+        .swiper-slide ul li {
+            text-align: left;
+            width: 100%; /* Ensure the full width is utilized */
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <h1>황 하 연 돌 초대장</h1>
+            <img
+                    src="./image/1.JPG" class="resize-image"
+                    >
+                    <style>
+                        .resize-image {
+                            width: 50%;
+                            height: auto;
+                        }
+                    </style>
+            <h2>감사합니다</h2>
+            <p><a href="https://www.shilla.net/seoul/dining/viewDining.do?contId=PAR#ad-image-0">The Parkview</a></p>
+
+            <p>2025. 05. 31.</p>
+        </div>
+
+        <div class="swiper-slide">
+            <p style="font-size: 19px; line-height: 1.5; font-family: 'Gowun Batang', serif;">
+                <b>사랑하는 가족 여러분께,</b><br>
+                어느덧 하연이가 세상에 온 지 1년이 되었습니다.<br>
+                여러분의 따뜻한 관심과 사랑 덕분에<br>
+                건강하고 밝게 성장할 수 있었습니다. <br><br>
+                소중한 가족분들과 함께 하연이의 첫 돌을 축하하며 <br>
+                따뜻한 식사 자리를 마련하였습니다. <br>
+                부디 함께하시어 자리를 빛내 주시면<br><br>
+                감사하겠습니다 <br><br>
+                <b>♡ 일 시 : 2025년 5월 31일 (토)</b> <br>
+                <b>♡ 장 소 : 신라호텔 더 파크뷰</b> <br><br>
+                마음만으로도 충분히 감사한 자리이기에<br>
+                <b>금반지나 용돈 등의 선물은 정중히 사양합니다 </b><br>
+                함께해 주시고, 즐거운 시간 보내주시는 것만으로도 <br>
+                큰 기쁨이 될 것 입니다.<br><br>
+                기쁜 마음으로 기다리고 있겠습니다.<br><br>
+                <b>황성진 & 이다희 드림</b><br>
+            </p>
+        </div>
+        <div class="swiper-slide">
+            <img src="./image/2.JPG" class="resize-image">
+            <style>
+                .resize-image {
+                    width:50%;
+                    height:auto;
+                }
+            </style>
+        </div>
+        <div class="swiper-slide">
+            <img src="./image/3.JPG" class="resize-image">
+            <style>
+                .resize-image {
+                    width:auto;
+                    height:auto;
+                }
+            </style>
+        </div>
+        <div class="swiper-slide">
+            <img src="./image/4.JPG" class="resize-image">
+            <style>
+                .resize-image {
+                    width:50%;
+                    height:auto;
+                }
+            </style>
+        </div>
+        <div class="swiper-slide">
+            <img src="./image/5.JPG" class="resize-image">
+            <style>
+                .resize-image {
+                    width:50%;
+                    height:auto;
+                }
+            </style>
+        </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        grabCursor: true,
+        effect: "cards",
+        perSlideOffset: 5,
+        perSlideRotate: 8,
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: ["-120%", 0, -500],
+            },
+            next: {
+                shadow: true,
+                translate: ["120%", 0, -500],
+            },
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        slideToClickedSlide: true
+    });
+
+
+</script>
+</body>
 </html>
